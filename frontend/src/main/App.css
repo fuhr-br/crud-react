@@ -1,0 +1,90 @@
+:root {
+  --bg-dark: #1a2f3a;
+
+  --logo-height: 100px;
+  --header-height: 150px;
+  --menu-top-height: 70px;
+  --aside-width: 250px;
+  --footer-height: 40px;
+
+  --shadow: 0 2px 23px 0 rgba(0, 0, 0, 0.1), 0 2px 49px 0 rgba(0, 0, 0, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+  /* A font Montserrat será importada do index.html da tag 
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
+    */
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Layout em Grid */
+
+.app {
+  margin: 0px;
+  display: grid;
+  grid-template-columns: var(--aside-width) 1fr;
+  grid-template-rows:
+    var(--header-height)
+    1fr
+    var(--footer-height);
+  grid-template-areas:
+    "logo header"
+    "menu content"
+    "menu   footer";
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/*Referenciar a tag e depois o nome da classe que quer refferenciar no grid-tamplate-area*/
+aside.logo {
+  grid-area: logo;
+}
+header.header {
+  grid-area: header;
+}
+
+aside.menu-area {
+  grid-area: menu;
+}
+
+main.content {
+  grid-area: content;
+}
+
+footer.footer {
+  grid-area: footer;
+}
+
+@media (max-width: 768px) {
+  .app {
+    grid-template-rows:
+      var(--header-height)
+      var(--menu-top-height)
+      1fr
+      var(--footer-height);
+    grid-template-columns: var(--aside-width) 1fr;
+    grid-template-areas:
+      "logo header"
+      "menu menu"
+      "content content"
+      "footer footer";
+  }
+}
+
+@media (max-width: 576px) {
+  .app {
+    grid-template-rows:
+      var(--logo-height)
+      var(--menu-top-height)
+      1fr
+      var(--footer-height);
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "logo"
+      "header"
+      "menu"
+      "content"
+      "footer";
+  }
+}

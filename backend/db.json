@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "João das couves",
+      "email": "joao@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Maria",
+      "email": "maria@example.com"
+    },
+    {
+      "name": "Adair",
+      "email": "adaria@yahoo.com.br",
+      "id": 3
+    },
+    {
+      "name": "Alberto torres",
+      "email": "Alberto@yahoo.com.br",
+      "id": 4
+    },
+    {
+      "name": "Lila",
+      "email": "Lila@yahoo.com",
+      "id": 5
+    },
+    {
+      "name": "heroku",
+      "email": "heroku@yahoo.com",
+      "id": 6
+    },
+    {
+      "name": "Lila",
+      "email": "admin",
+      "id": 7
+    }
+  ]
+}
