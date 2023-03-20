@@ -27,6 +27,8 @@ npm start
 Abra o browser em:  http://localhost:3000
 <hr/>
 
+![image](https://user-images.githubusercontent.com/58981492/226485738-16ad0307-bea6-40db-a405-a6a76d18aab0.png)
+
 
 # Como este projeto foi criado:
 
@@ -91,4 +93,6 @@ No Arquivo em <code>./public/index.html</code> foi inserida a fonte:
 ```
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700" rel="stylesheet">
 ```
+
+
 
